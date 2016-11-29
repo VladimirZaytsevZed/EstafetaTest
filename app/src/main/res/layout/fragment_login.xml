@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/et_login"
+                style="@style/CreateAccountEditText"
+                android:background="@drawable/create_account_edit_text_selector"
+                android:hint="@string/login"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/et_password"
+                android:nextFocusLeft="@+id/et_password"
+                android:nextFocusRight="@+id/et_password"
+                android:nextFocusUp="@+id/et_password"/>
+
+            <ImageView
+                style="@style/CreateAccountImageView"
+                android:layout_alignRight="@id/et_login"
+                android:src="@drawable/ico_mail_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/CreateAccountEditText"
+                android:background="@drawable/create_account_edit_text_selector"
+                android:hint="@string/password_placeholder"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                style="@style/CreateAccountImageView"
+                android:layout_alignRight="@id/et_password"
+                android:src="@drawable/ico_pass_dark"/>
+        </RelativeLayout>
+
+        <com.volodia.estafetatest.utils.ProgressLayout
+            android:id="@+id/pl_sign_in"
+            android:layout_width="261dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/rl_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp">
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_green_rounde"
+                android:text="@string/login"
+                android:textColor="@color/button_text_selector"
+                android:textSize="14sp"
+                android:textStyle="normal"/>
+        </com.volodia.estafetatest.utils.ProgressLayout>
+
+    </RelativeLayout>
+</ScrollView>

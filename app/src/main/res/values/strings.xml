@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EstafetaTest</string>
+    <string name="model">Model</string>
+    <string name="brand">Brand</string>
+    <string name="carrier">Carrier</string>
+    <string name="driver">Driver</string>
+    <string name="login">Login</string>
+    <string name="password_placeholder">password</string>
+    <string name="empty_login">Enter login</string>
+    <string name="empty_password">enter password</string>
+    <string name="logout">Logout</string>
+</resources>

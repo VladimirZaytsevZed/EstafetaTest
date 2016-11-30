@@ -130,7 +130,6 @@ public class FragmentTasksList extends Fragment implements AdapterView.OnItemSel
     }
 
     public void loadDataFailed(String message) {
-        rv_tasks.setBackgroundColor(Color.GREEN);
         Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
     }
 

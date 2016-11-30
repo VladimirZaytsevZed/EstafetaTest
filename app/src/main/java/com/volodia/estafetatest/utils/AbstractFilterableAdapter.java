@@ -120,9 +120,6 @@ public abstract class AbstractFilterableAdapter<T, A> extends RecyclerView.Adapt
 
         public QueryTextListener(RecyclerView recyclerView) {
             this.recyclerView = recyclerView;
-            for (int i = 0; i < 100; i++) {
-                list.add(Bitmap.createBitmap(1000, 1000, Bitmap.Config.ALPHA_8));
-            }
         }
 
         @Override
